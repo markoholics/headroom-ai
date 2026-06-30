@@ -11,10 +11,12 @@ requires-python = ">=3.10"
 license = { text = "Apache-2.0" }
 dependencies = [
     "headroom-ai[all]>=0.28.0",
+    "anthropic>=0.18.0",
 ]
 
 [project.scripts]
 cee-headroom = "cee_headroom_ai.cli:main"
+cee-headroom-claude-proxy = "cee_headroom_ai.cli:claude_proxy"
 
 [tool.setuptools.packages.find]
 where = ["src"]
